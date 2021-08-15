@@ -71,7 +71,7 @@ module.exports = function (req, res, url) {
 			};
 			params = {
 				flashvars: {
-					'apiserver':  '/', 'userId': '', 'username': '', 'uemail': '', 'numContact': '', 'nextUrl': '/go/movie/?movieId=<movieId>',
+					'apiserver': '/', 'userId': '', 'username': '', 'uemail': '', 'numContact': '', 'nextUrl': '/go/movie/?movieId=<movieId>',
 					'tts_enabled': '', 've': '', 'isEmbed': '0', 'bgload': process.env.SWF_URL + '/go_full.swf?v=454', 'lid': '7', 'ctc': 'go',
 					'tlang': 'en_US', 'siteId': '7', 'templateshow': 'false', 'forceshow': 'false', 'appCode': 'go', 'lang': 'en', 
 					'fb_app_url': '/', 'is_published': is_published, 'is_private_shared': '0', 'upl': '0', 'hb': '1', 'pts': '0', 'msg_index', '',
