@@ -2,14 +2,14 @@
 	"GET": {
 		"/index.html": {
 			"headers": {
-				"Location": "/go"
+				"Location": "/go/"
 			},
 			"statusCode": 302,
 			"content": ""
 		},
 		"/$": {
 			"headers": {
-				"Location": "/go"
+				"Location": "/go/"
 			},
 			"statusCode": 302,
 			"content": ""
@@ -92,6 +92,21 @@
 		"go/(.*)": {
 			"headers": {
 				"Content-Type": "text/html; charset=UTF-8"
+			}
+		},
+		"static/go/(.*)": {
+			"headers": {
+				"Content-Type": "text/html; charset=UTF-8"
+			}
+		},
+		"static/go/(.*)": {
+			"headers": {
+				"Content-Type": "text/xml; charset=UTF-8"
+			}
+		},
+		"static/go/(.*)": {
+			"headers": {
+				"Content-Type": "application/x-shockwave-flash; charset=UTF-8"
 			}
 		},
 		"pages/css/(.*)": {
