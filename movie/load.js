@@ -23,7 +23,7 @@ module.exports = function (req, res, url) {
 		}
 
 		case 'POST': {
-			if (!url.path.startsWith('/goapi/getMovie/')) return;
+			if (!url.path.startsWith('/api/getMovie/')) return;
 			res.setHeader('Content-Type', 'application/zip');
 
 			movie.loadZip(url.query.movieId).then(b =>
