@@ -101,6 +101,16 @@
 		},
 		"static/go/(.*)": {
 			"headers": {
+				"Content-Type": "text/css; charset=UTF-8"
+			}
+		},
+		"static/go/(.*)": {
+			"headers": {
+				"Content-Type": "text/js; charset=UTF-8"
+			}
+		},
+		"static/go/(.*)": {
+			"headers": {
 				"Content-Type": "text/xml; charset=UTF-8"
 			}
 		},
