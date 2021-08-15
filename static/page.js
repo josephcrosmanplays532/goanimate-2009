@@ -61,20 +61,20 @@ module.exports = function (req, res, url) {
 			break;
 		}
 		
-		case '/go_full': {
+		case '/go/studio': {
 			let presave = query.movieId && query.movieId.startsWith('m') ? query.movieId :
 				`m-${fUtil[query.noAutosave ? 'getNextFileId' : 'fillNextFileId']('movie-', '.xml')}`;
-			title = 'Video Editor';
+			title = 'GoAnimate - Create animations';
 			attrs = {
-				data: process.env.SWF_URL + '/go_full.swf',
+				data: process.env.SWF_URL + '/go_full.swf?v=454',
 				type: 'application/x-shockwave-flash', width: '100%', height: '100%',
 			};
 			params = {
 				flashvars: {
-					'apiserver': '/', 'storePath': process.env.STORE_URL + '/<store>', 'isEmbed': 1, 'ctc': 'go',
-					'ut': 60, 'bs': 'default', 'appCode': 'go', 'page': '', 'siteId': 'go', 'lid': 13, 'isLogin': 'Y', 'retut': 1,
-					'clientThemePath': process.env.CLIENT_URL + '/<client_theme>', 'themeId': 'business', 'tlang': 'en_US',
-					'presaveId': presave, 'goteam_draft_only': 1, 'isWide': 1, 'nextUrl': '/pages/html/list.html',
+					'apiserver':  '/', 'userId': '', 'username': '', 'uemail': '', 'numContact': '', 'nextUrl': '/go/movie/?movieId=<movieId>',
+					'tts_enabled': '', 've': '', 'isEmbed': '0', 'bgload': process.env.SWF_URL + '/go_full.swf?v=454', 'lid': '7', 'ctc': 'go',
+					'tlang': 'en_US', 'siteId': '7', 'templateshow': 'false', 'forceshow': 'false', 'appCode': 'go', 'lang': 'en', 
+					'fb_app_url': '/', 'is_published': is_published, 'is_private_shared': '0', 'upl': '0', 'hb': '1', 'pts': '0', 'msg_index', '',
 				},
 				allowScriptAccess: 'always',
 			};
