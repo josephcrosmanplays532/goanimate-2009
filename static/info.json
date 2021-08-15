@@ -89,7 +89,7 @@
 		"char_default.png": {
 			"content": "{\"message\":\"REQUEST_HAS_EXPIRED\"}"
 		},
-		"go(.*)": {
+		"go/(.*)": {
 			"headers": {
 				"Content-Type": "text/html; charset=UTF-8"
 			}
